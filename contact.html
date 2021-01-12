@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="navbar">
+		<div class="navbar-container">
+			<ul>
+				<li><a href="portfolio.html#home">Home</a></li>
+				<li><a href="portfolio.html#resume">Resume</a></li>
+				<li><a href="portfolio.html#skills">Skills</a></li>
+				<li><a href="portfolio.html#projects">Projects</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</div>
+    </header>
+
+    <section id="home">
+        <div class=container>
+            <div class="home-border">
+                <div class="contact-container">
+
+						<form action="POST" data-netlify="true" class="form">
+
+							<h1>Get In Touch</h1>
+							
+							<input id="name" name="name" placeholder="Name">
+							
+							<input id="email" name="email" placeholder="Email">
+
+							<textarea id="message" name="message" placeholder="Write me a message!"></textarea>
+
+							<input type="file" id="file" name="File" placeholder="Upload file">
+
+							<input id="btn" type="submit" value="submit">
+
+							<div class="field">
+								<div data-netlify-recaptcha="true"></div>
+							</div>
+						</form>
+        </div>
+    </section>
+    
+</body>
+</html>
+
+
