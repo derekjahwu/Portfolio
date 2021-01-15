@@ -72,7 +72,7 @@ body{
 	text-align: center;
 }
 
-.form{
+.contact-form{
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -89,26 +89,26 @@ input, textarea{
 	padding: 10px;
 }
 
-#name{
+.name{
 	margin: 10px 0;
 	height: 5%;
 	width:80%;
 	border:none;
 }
 
-#email{
+.email{
 	width:80%;
 	margin: 10px 0;
 	height: 5%;
 }
 
-#message{
+.message{
 	margin: 10px 0;
 	height: 100px;
 	width:80%;
 }
 
-#btn{
+.btn{
 	margin: 10px 0;
 	height: 50px;
 	width: 40%;
