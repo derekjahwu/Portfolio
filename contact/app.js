@@ -21,19 +21,20 @@ let contactInfo = firebase.database().ref("infos");
      e.preventDefault();
 
      //Get Input Values
-     let name = document.querySelector('.name').value;
-     let email = document.querySelector('.email').value;
-     let message = document.querySelector('.message').value;
+     const firstName = document.getElementById('first-name').value,
+           lastName = document.getElementById('last-name').value,
+           email = document.getElementById('email').value,
+           message = document.getElementById('message').value;
 
-     saveContactInfo(name, email, message);
+     saveContactInfo(firstName, lastName, email, message);
 
      document.querySelector('.contact-form').reset();
 
-     sendEmail(name, email, message)
+     sendEmail(firstName, lastName, email, message)
  }
 
  //save infos to firebase
- function saveContactInfo(name, email, message) {
+ function saveContactInfo(firstName, lastName, email, message) {
     let newContactInfo = contactInfo.push();
 
     newContactInfo.set({
@@ -44,15 +45,15 @@ let contactInfo = firebase.database().ref("infos");
  }
 
  //send email Info
- function sendEmail(name, email, message){
+ function sendEmail(firstName, lastName, email, message){
     Email.send({
         Host : "smtp.gmail.com",
         Username : "derekjwu96@gmail.com",
         Password : "iguqfdiafowecknm",
         To : 'derekjwu96@gmail.com',
         From : 'derekjwu96@gmail.com',
-        Subject : `${name} has sent you a message`,
-        Body : `name: ${name} <br/> Email: ${email} <br/> Message ${message}`,
+        Subject : `${firstName} ${lastName} has sent you a message`,
+        Body : `From: ${firstName} ${lastName} <br/> Email: ${email} <br/> Message ${message}`,
 
     }).then(
       message => alert('Email had been successfully sent')
