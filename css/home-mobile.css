@@ -149,7 +149,6 @@ body{
 .projects-container{
     display:flex;
     flex-direction: column;
-	grid-gap: 50px;
 	width:80%;
 }
 
@@ -160,6 +159,7 @@ body{
 .projects-container ul li{
     text-align: center;
     font-size: 35px;
+    list-style: none;
 }
 
 .projects-container ul{
@@ -168,7 +168,8 @@ body{
 
 .project{
 	border: 2px salmon solid;
-	padding: 20px;
+    padding: 20px;
+    margin:50px 0;
 	border-radius: 10px;
 	box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.5);
 	align-items: center;
