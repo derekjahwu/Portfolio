@@ -22,7 +22,7 @@ body{
 	width:100%;
 }
 .navbar{
-	background-color: lightslategray;
+	background-color: #303030;
 	position:fixed;
 	display: flex;
 	align-items: center;
@@ -37,7 +37,7 @@ body{
 	align-items: center;
 }
 .navbar a{
-	color:black;
+	color:linen;
 	text-decoration: none;
 	font-size: 20px;
 	padding:0 20px;
@@ -89,8 +89,8 @@ body{
 }
 
 #resume a:hover{
-	background:lightslategray;
-	color:black;
+	background:#303030;
+	color:linen;
 	transform:scale(1.1,1.1);
 	transition: all 0.3s ease-in-out;
 }
