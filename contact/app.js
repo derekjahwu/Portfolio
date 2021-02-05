@@ -72,7 +72,7 @@ let contactInfo = firebase.database().ref("infos");
   div.appendChild(document.createTextNode(alert));
 
   //get parent
-  const title = document.getElementById('title');
+  const title = document.getElementById('btn');
 
   //getting form container
   const container = document.querySelector('.contact-form');
