@@ -26,7 +26,7 @@ body{
 	width:100%;
 }
 .navbar{
-	background-color: lightslategray;
+	background-color: #303030;
 	position:fixed;
 	display: flex;
 	justify-content: center;
@@ -43,7 +43,7 @@ body{
 	align-items: center;
 }
 .navbar a{
-	color:black;
+	color:linen;
 	text-decoration: none;
 	font-size: 20px;
 	padding: 0  50px;
@@ -96,8 +96,8 @@ body{
 }
 
 #resume a:hover{
-	background:lightslategray;
-	color:black;
+	background:#303030;
+	color:white;
 	transform:scale(1.1,1.1);
 	transition: all 0.3s ease-in-out;
 }
@@ -131,7 +131,7 @@ body{
 
 
 #skills .container .skills-container ul{
-	border:3px solid lightslategray;
+	border:3px solid #303030;
 	border-radius:2%;
 	background:linen;
 	box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.5);
