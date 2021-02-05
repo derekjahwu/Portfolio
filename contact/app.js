@@ -31,6 +31,7 @@ let contactInfo = firebase.database().ref("infos");
      document.querySelector('.contact-form').reset();
 
      sendEmail(firstName, lastName, email, message)
+
  }
 
  //save infos to firebase
@@ -56,7 +57,30 @@ let contactInfo = firebase.database().ref("infos");
         Body : `From: ${firstName} ${lastName} <br/> Email: ${email} <br/> Message ${message}`,
 
     }).then(
-      message => alert('Email had been successfully sent')
-    );
+      showAlert());
  }
+
+ function showAlert() {
+  const alert = 'Your Message has been Sent!',
+        style = 'success';
+  //creates div
+  const div = document.createElement('div');
+
+  //adding class to div
+  div.className = 'success'
+  //appending child
+  div.appendChild(document.createTextNode(alert));
+
+  //get parent
+  const title = document.getElementById('title');
+
+  //getting form container
+  const container = document.querySelector('.contact-form');
+
+  container.insertBefore(div, title);
+
+  setTimeout(function(){
+      document.querySelector('.success').remove();
+  }, 3000);
+}
 
