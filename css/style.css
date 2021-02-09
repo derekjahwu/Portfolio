@@ -33,6 +33,7 @@ body{
 	align-items: center;
 	width: 100%;
 	height: 60px;
+	z-index:10;
 	
 }
 .navbar ul{
@@ -56,8 +57,13 @@ body{
 	transition:all 0.2s ease-in-out;
 }
 
+#home{
+	transition: 1s all ease-in-out;
+}
+
 #about{
 	padding: 20px;
+	opacity:1;
 }
 
 #about h1{
@@ -131,7 +137,7 @@ body{
 
 
 #skills .container .skills-container ul{
-	border:3px solid #303030;
+	border:3px solid linen;
 	border-radius:2%;
 	background:linen;
 	box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.5);

@@ -5,10 +5,16 @@
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 999px)" href="css/home-mobile.css" />
 	
 	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="css/style.css" />
-	
-	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
 </head>
 <body>
@@ -25,14 +31,14 @@
 	</header>
 
 <section id="home">
-	<div class=container>
-		<div class="home-border">
-			<div id="about">
+	<div class="container">
+		<div class="home-border" >
+			<div id="about" class="animate__animated animate__fadeInDown">
 				<h1>Front End Web Developer</h1>
 				<p>Hello! My name is Derek Wu and I am a Web Developer in Orange, CA. I am teaching myself how to code while working full-time as a Level 1 Technical Analyst.</p>
 			</div>
 
-			<div id="profile">
+			<div id="profile" class="animate__animated animate__fadeInUp">
 				<img src="images/profile.jpg" alt="profilepic">
 			</div>
 		</div>
@@ -41,9 +47,11 @@
 
 <section>
 	<div id="resume">
-		<h1>Thanks for stopping by!</h1>
-		<p>Please take a look at my skills and some of my most recent projects. Have a copy of my Resume too!</p>
-		<a href="resume/Derek_Wu_Resume.pdf" target="_blank">Resume</a>
+		<div id="resume-container">
+			<h1>Thanks for stopping by!</h1>
+			<p>Please take a look at my skills and some of my most recent projects. Have a copy of my Resume too!</p>
+			<a href="resume/Derek_Wu_Resume.pdf" target="_blank">Resume</a>
+		</div>
 	</div>
 </section>
 
@@ -51,15 +59,16 @@
 <section id="skills">
 	<div class="container">
 		<div class="skills-container">
-		<ul>
+		<ul id='skill1'>
 			<h1>Things I've Learned</h1>
 			<li>HTML5</li>
 			<li>CSS3</li>
 			<li>Javascript</li>
 			<li>React Native</li>
 		</ul>
+	
 
-		<ul>
+		<ul id='tools'>
 			<h1>Tools</h1>
 			<li>Visual Studio Code</li>
 			<li>Github</li>
@@ -129,7 +138,7 @@
 	</div>
 </div>
 
-
+<script src="app.js"></script>
 
 </body>
 </html>
