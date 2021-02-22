@@ -167,7 +167,7 @@ body{
 	display:grid;
 	justify-content: center;
 	grid-gap: 50px;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	width:60%;
 }
 
@@ -180,6 +180,27 @@ body{
 }
 
 .projects-container ul{
+	text-align: center;
+}
+
+.projects2-container{
+	display:grid;
+	justify-content: center;
+	grid-gap: 50px;
+	grid-template-columns: 1fr;
+	width:60%;
+	height:100%;
+}
+
+.projects2-container .image{
+	overflow:hidden;
+}
+
+.projects2-container ul li{
+	text-align: center;
+}
+
+.projects2-container ul{
 	text-align: center;
 }
 
@@ -200,6 +221,16 @@ body{
 }
 
 .projects-container img:hover{
+	transform: scale(1.3,1.3)
+}
+
+.projects2-container img{
+	width: 300px;
+	height: 200px;
+	transition: all 0.5s ease-in-out;
+}
+
+.projects2-container img:hover{
 	transform: scale(1.3,1.3)
 }
 
