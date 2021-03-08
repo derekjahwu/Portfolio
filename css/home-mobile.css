@@ -20,35 +20,111 @@ body{
 
 .navbar-container{
 	width:100%;
+	
 }
 .navbar{
-	background-color: #303030;
+	background-color: linen;
 	position:fixed;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	height: 100px;
 	z-index:10;
+
 }
-.navbar ul{
+
+/* navbar! */
+.navbar #mobileNav{
 	width:100%;
+	height:100%;
 	list-style: none;
-	display:flex;
+	display:none; 
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+
+}
+
+.navbar li{
+	padding:10px 0;
 }
 .navbar a{
-	color:linen;
+	color:#303030;
 	text-decoration: none;
-	font-size: 20px;
-	padding:0 20px;
+	font-size: 60px;
+	padding: 10px 30px;
+}
+
+/* Hamburger!! */
+.navbar-container .hamburger{
+	/* display:none; */
+	font-size: 75px;
+	padding:20px 20px;
+	background:linen;
+	color:#303030;
+	border:none;
+	
+}
+
+#close a{
+	font-size: 75px;
+}
+
+#close{
+	padding-bottom: 90px;
+}
+
+
+
+.navbar-container .hamburger:hover{
+	color:cadetblue;
 }
 .navbar a:hover{
-	background: rgba(255,255,255,0.1);
-	color:salmon;
+	background: rgba(0, 0, 0, 0.1);
+	color:cadetblue;
 	border-radius: 2px;
-	border-bottom: 1px solid salmon;
+	border-bottom: 1px solid cadetblue;
 	transition:all 0.2s ease-in-out;
+}
+
+.home-container{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin:auto;
+	overflow:hidden;
+	height: 80vh;
+	background:#303030;
+}
+
+.home-links{
+	width:100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.home-links a:hover{
+	color:#303030;
+	background:linen;
+	transition: all 0.75s ease-in-out;
+}
+
+
+.link{
+	font-size: 50px;
+	margin:20px 0px;
+	padding:0px 10px;
+	width:50%;
+	border-radius: 10px;
+	background:cadetblue;
+	border:1px black solid;
+	text-decoration: none;
+	color:linen;
+	border:none;
 }
 
 #about{
@@ -57,7 +133,7 @@ body{
 
 #about h1{
 	font-size: 100px;
-	color:salmon;
+	color:cadetblue;
 }
 
 #about p{
@@ -70,15 +146,16 @@ body{
 	align-items: center;
 	justify-content: center;
 	padding:125px;
-	background:salmon;
+	background:cadetblue;
+	font-size: 40px;
 }
 
 #resume h1{
-	font-size: 3rem;
+	font-size: 4rem;
 }
 
 #resume p{
-	font-size: 20px;
+	font-size: 35px;
 }
 
 #resume a{
@@ -102,6 +179,7 @@ body{
   overflow: hidden;
   border-radius: 50%;
   margin: 100px auto;
+  display:none;
 }
 
 #profile img {
@@ -112,6 +190,12 @@ body{
 
 #skills{
 	width:100%;
+	text-align: center;
+	font-size: 40px;
+}
+
+#skills hr{
+	width: 90%;
 }
 
 .skills-container{
@@ -139,11 +223,25 @@ body{
 
 #skills .container .skills-container h1{
 	font-size: 3rem;
-	color: salmon;
+	color: cadetblue;
 }
 
 #skills .container .skills-container li{
 	font-size: 35px;
+}
+
+#projects{
+	text-align: center;
+	font-size: 40px;
+}
+
+#projects .chevron{
+	font-size: 75px;
+	color:#303030;
+}
+
+#projects hr{
+	width: 90%;
 }
 
 .projects-container{
@@ -166,7 +264,7 @@ body{
 }
 
 .project{
-	border: 2px salmon solid;
+	border: 2px cadetblue solid;
     padding: 20px;
     margin:50px 0;
 	border-radius: 10px;
