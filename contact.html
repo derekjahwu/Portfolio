@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Derek J. Wu | Contact Me</title>
+	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 556px)" href="../css/mobile.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 557px)" href="../css/contact.css" />
+
+	<!-- <link rel="stylesheet" type="text/css" href="../css/contact.css"> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4024402c5f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="navbar">
+		<div class="navbar-container">
+			<ul>
+				<li><a id="back" href="../index.html"><i class="fas fa-angle-left"></i></a></li>
+				<li><a id="hide"href="../index.html#home">Home</a></li>
+				<li><a id="hide" href="../index.html#projects">Projects</a></li>
+				<li><a id="hide" href="../index.html#skills">Skills</a></li>
+				<li><a id="hide" href="../resume/Derek_Wu_Resume.pdf">Resume</a></li>
+				<li><a id="hide" href="#">Contact</a></li>
+			</ul>
+		</div>
+    </header>
+
+    <section id="home">
+        <div class=container>
+            <div class="home-border">
+                <div class="contact-container">
+
+					<form method="POST" class="contact-form">
+						<!-- <div class='success'>Your message has been sent!</div> -->
+						<h1 id='title'>Get In Touch!</h1>
+							
+						<input class='field' id="first-name" type="text" placeholder="First Name" required>
+
+						<input class='field' id="last-name" type="text" placeholder="Last Name" required>
+							
+						<input class='field' id="email" type="email" placeholder="Email" required>
+
+						<textarea id="message" name="message" placeholder="message" required></textarea>
+
+						<input id="btn" type="submit" value="submit">
+							
+					</form>
+        </div>  
+    </section>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
+
+
