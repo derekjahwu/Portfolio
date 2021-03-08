@@ -1,6 +1,6 @@
 
 body{
-	background-color:salmon;
+	background-color:cadetblue;
 	color:black;
 	font-family: 'Roboto Slab', serif;
 	height: 100vh;
@@ -30,8 +30,13 @@ body{
 .navbar-container{
 	width:100%;
 }
+
+.navbar-container ul #back{
+	display:none;
+}
+
 .navbar{
-	background-color:  #303030;
+	background-color: linen;
 	position:fixed;
 	display: flex;
 	justify-content: center;
@@ -47,17 +52,20 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+
+
+
 .navbar a{
-	color:linen;
+	color: #303030;
 	text-decoration: none;
 	font-size: 20px;
 	padding: 0  50px;
 }
 .navbar a:hover{
-	background: rgba(255,255,255,0.1);
-	color:salmon;
+	background: rgba(0, 0, 0, 0.1);
+	color:cadetblue;
 	border-radius: 2px;
-	border-bottom: 1px solid salmon;
+	border-bottom: 1px solid cadetblue;
 	transition:all 0.2s ease-in-out;
 }
 
