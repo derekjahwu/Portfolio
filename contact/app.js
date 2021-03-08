@@ -50,7 +50,7 @@ let contactInfo = firebase.database().ref("infos");
     Email.send({
         Host : "smtp.gmail.com",
         Username : "derekjwu96@gmail.com",
-        Password : "iguqfdiafowecknm",
+        Password : "hwdvhkcgtejdgsyv",
         To : 'derekjwu96@gmail.com',
         From : 'derekjwu96@gmail.com',
         Subject : `${firstName} ${lastName} has sent you a message`,
