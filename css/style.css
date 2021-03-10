@@ -180,6 +180,13 @@ body{
   margin:0px auto;
 }
 
+@media (max-width: 600px) {
+	#profile{
+		display:none;
+	}
+}
+
+
 #profile img {
   height: 100%;
   margin-left: -130px;
@@ -197,6 +204,14 @@ body{
 	display:flex;
 	width:60%;
 	height:100%;
+}
+
+@media (max-width: 1200px ) {
+	.skills-container{
+		display:flex;
+		width:90%;
+		height:100%;
+	}
 }
 
 
@@ -245,10 +260,35 @@ body{
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 40px;
 	width:60%;
 	height:100%;
+}
+
+@media (max-width: 1000px) {
+
+	.projects-container{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		/* grid-template-columns: 1fr 1fr 1fr; */
+		grid-gap: 40px;
+		width:60%;
+		height:100%;
+	}
+
+	.container{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin:20px;
+		height: 100%;
+	}
 }
 
 .projects-container ul li{
