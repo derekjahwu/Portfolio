@@ -186,6 +186,12 @@ body{
 	}
 }
 
+@media (max-height:670px) {
+	#profile{
+		display:none;
+	}
+}
+
 
 #profile img {
   height: 100%;
@@ -303,7 +309,7 @@ body{
 .project{
 	border: 1px cadetblue solid;
 	box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.5);
-	height:450px;
+	height:350px;
 	width:300px;
 	align-items: center;
 	justify-content: center;
